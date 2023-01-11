@@ -21,7 +21,9 @@
     <div class="contenedor">
       <div class="navbar">
         <img src="./assets/images/logo.svg" alt="Logo" />
-        <div class="navMenu">
+        <div id="menHamb" class="menHamb"><img src="./assets/images/icon-menu.svg" alt=""></div>
+        <div class="navMenu" id="navMenu">
+          <div class="cerrar" id="cerrar"><img src="./assets/images/icon-menu-close.svg" alt=""></div>
           <ul>
             <li>Home</li>
             <li>New</li>
@@ -33,7 +35,11 @@
       </div>
       <div class="main">
         <div>
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="Imagen" />
+          <picture>
+            <source srcset="./assets/images/image-web-3-desktop.jpg"
+                    media="(min-width: 420px)">
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+        </picture>
         </div>
         <div class="promo">
           <h1>The Bright Future of Web 3.0?</h1>
@@ -88,12 +94,14 @@
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
+     
     </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

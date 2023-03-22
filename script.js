@@ -6,4 +6,4 @@ abrir.addEventListener("click", ()=>{
 })
 cerrar.addEventListener("click", ()=>{
     navMenu.style.display="none";
-})
+});
